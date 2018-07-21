@@ -1,0 +1,11 @@
+version: '2'
+services:
+    gufet-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/Gufet/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=Gufet
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
